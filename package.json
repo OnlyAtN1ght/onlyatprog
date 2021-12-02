@@ -1,5 +1,24 @@
 {
   "dependencies": {
-    "express": "^4.17.1"
-  }
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.14",
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "server:build": "cross-env NODE_ENV=production node server.js",
+    "server:watch": "cross-env NODE_ENV=development nodemon server.js",
+    "tailwind:build": "postcss frontend/assets/css/tailwind.css -o frontend/assets/css/style.css",
+    "tailwind:watch": "postcss frontend/assets/css/tailwind.css -o frontend/assets/css/style.css --watch",
+    "dev": "concurrently \"npm run server:watch\" \"npm run tailwind:watch\"",
+    "build": "npm run tailwind:build && npm run server:build"
+  },
+  "type": "module",
+  "devDependencies": {
+    "concurrently": "^6.4.0",
+    "cross-env": "^7.0.3",
+    "postcss-cli": "^9.0.2",
+    "tailwindcss": "^2.2.19"
+  },
+  "tailwind:css": "postcss public/styles/tailwind.css -o public/styles/style.css"
 }
