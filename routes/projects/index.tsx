@@ -11,9 +11,9 @@ export const handler: Handlers<Data | null> = {
 
     const projects = [
       {
-        name: "Project 1",
-        description: "A sample project",
-        url: "/project1"
+        name: "Lol Trackeur",
+        description: "Lol trackeur ",
+        url: "https://loltrackeur.onlyatprog.fr"
       },
       {
         name: "Project 2",
