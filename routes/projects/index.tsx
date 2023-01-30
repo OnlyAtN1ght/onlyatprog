@@ -13,7 +13,7 @@ export const handler: Handlers<Data | null> = {
       {
         name: "Lol Trackeur",
         description: "Lol trackeur ",
-        url: "https://loltrackeur.onlyatprog.fr"
+        url: "https://loltracker.onlyatprog.fr"
       },
       {
         name: "Project 2",
